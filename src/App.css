@@ -1,0 +1,21 @@
+.app{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container Button{
+    margin: 25px 0;
+}
+
+.table{
+    width: 80%;
+}
