@@ -74,8 +74,6 @@ export default function FormDialog({ open, onClose, onSave, editableMovie }) {
 		onSave(movie);
 	};
 
-	const [value, setValue] = React.useState(dayjs('2022-04-17'));
-
 	return (
 	  <Dialog open={open} onClose={onClose}>
 		<DialogTitle>Фильм</DialogTitle>
@@ -129,11 +127,14 @@ export default function FormDialog({ open, onClose, onSave, editableMovie }) {
 				<DemoContainer components={['DatePicker']}>
 					<DatePicker
 						label="Дата выхода"
-						value={movie.release_date}
-						onChange={(newValue) => onReleaseDateChange(newValue)}
+						value={dayjs(movie.release_date)}
+						onChange={onReleaseDateChange}
 					/>
 				</DemoContainer>
 			</LocalizationProvider>
+
+
+
 
 		</DialogContent>
 		<DialogActions>
