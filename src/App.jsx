@@ -73,6 +73,7 @@ export default () => {
 	return (
 		<>
 			<div className="container">
+				<h1>Разработчик Зайцев Максим</h1>
 				<h1>Список фильмов</h1>
 
 				<Button variant="contained" onClick={openAddDialog}>
